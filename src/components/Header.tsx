@@ -79,7 +79,7 @@ const Header: React.FC = () => {
     </div>
 
     <div className="header_wrapper__photo">
-    <Image alt="" src="/images/headerphoto.jpg" className="home__img" width={600} height={600} style={{ objectFit: 'cover', width: '100%' }} />
+    <Image alt="" src="/images/headerphoto.jpg" className="home__img" width={200} height={200} style={{ objectFit: 'cover', width: '100%' }} />
 
     </div>
 

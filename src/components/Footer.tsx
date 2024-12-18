@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <div id="fourth">
       <div className="footer">
         <a href="mailto:d.valiev@innopolis.university" className="logo nav-list__link--active">
-          d.valiev@innopolis.university
+          Danilv74@mail.ru
         </a>
         <div className="social-icons">
           <a href="https://www.vk.com/dorley">
