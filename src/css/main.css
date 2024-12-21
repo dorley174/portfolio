@@ -711,12 +711,7 @@ html, body {
     width: 70%; /* Контейнер занимает всю ширину */
   }
   
-  .project {
-    
-    flex: 0 0 100%; /* Каждый элемент занимает 100% ширины контейнера */
-    box-sizing: border-box; /* Учитываем padding и border в ширине */
-    padding: 20px;
-  }
+  
   
   .slider-arrow {
     position: absolute;
