@@ -69,7 +69,7 @@ const showMessage = () => {
   // Добавьте другие проекты
 ];*/
 
-const projects = [
+/* const projects = [
   <li className='project'>
     <Image
       alt=""
@@ -162,6 +162,78 @@ const projects = [
       style={{ "--clr": "#fe00ff" } as React.CSSProperties}
     >
       <span>soon</span>
+      <i></i>
+    </a>
+  </li>,
+];*/
+
+const projects = [
+  <li key="electgen" className='project'>
+    <Image
+      alt=""
+      src="/images/electgen.jpg"
+      className="project__img"
+      width={500}
+      height={500}
+      style={{ objectFit: "cover", width: "100%" }}
+    />
+    <h4 className="project__title">ElectGen</h4>
+    <h5 className="project__description">
+      Automatic placement of students from different courses into their chosen
+      summer electives based on their GPA and personal priorities
+    </h5>
+    <a
+      href="https://gitlab.pg.innopolis.university/d.tolmeneva/elective-generator"
+      className="button"
+      style={{ "--clr": "#ffd600" } as React.CSSProperties}
+    >
+      <span>Available now</span>
+      <i></i>
+    </a>
+  </li>,
+  <li key="chessmaster" className='project'>
+    <Image
+      alt=""
+      src="/images/CM.png"
+      className="project__img"
+      width={500}
+      height={500}
+      style={{ objectFit: "cover", width: "100%" }}
+    />
+    <h4 className="project__title">Chess Master</h4>
+    <h5 className="project__description">
+      Discord bot that allows you to simulate a chess session. Based on
+      Stockfish - the Free Chess Engine with UCI support.
+    </h5>
+    <a
+      href="https://github.com/dorley174/Chess-Master"
+      className="button"
+      style={{ "--clr": "#ff0047" } as React.CSSProperties}
+    >
+      <span>Available now</span>
+      <i></i>
+    </a>
+  </li>,
+  <li key="meetime" className='project'>
+    <Image
+      alt=""
+      src="/images/MT.jpg"
+      className="project__img"
+      width={500}
+      height={500}
+      style={{ objectFit: "cover", width: "100%" }}
+    />
+    <h4 className="project__title">MeeTime</h4>
+    <h5 className="project__description">
+      A convenient website that allows the team to choose a convenient time for
+      calls.
+    </h5>
+    <a
+      onClick={() => alert("Private access only")}
+      className="button"
+      style={{ "--clr": "#39ff14" } as React.CSSProperties}
+    >
+      <span>private access</span>
       <i></i>
     </a>
   </li>,
