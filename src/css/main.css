@@ -186,7 +186,7 @@ html, body {
     
     width: 100%;
     display: flex; /* Включаем flexbox для родителя */
-    justify-content:space-between; /* Распределяем дочерние элементы по ширине */
+    justify-content:space-around; /* Распределяем дочерние элементы по ширине */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -279,20 +279,26 @@ html, body {
 }
 
 .project {
+    flex: 0 0 100%; /* Каждый элемент занимает 100% ширины контейнера */
+    box-sizing: border-box; /* Учитываем padding и border в ширине */
+    padding: 20px;
     
     margin: 25px 20px;
     text-align: center;
     
     padding-bottom: 30px;
-    width: 75%;
+    min-width: 75%;
+    max-width: 100%;
+    
     background-color: white;
-    /* border: 1px solid #00ffa1; */
+    
     box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    height: fit-content;
     
     display: flex; /* Включаем flexbox */
     flex-direction: column; /* Элементы располагаются вертикально */
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 
@@ -690,3 +696,64 @@ html, body {
         transparent var(--end-two)
     );
 }
+
+.slider {
+    position: relative;
+    width: 100%; /* Слайдер занимает всю ширину экрана */
+    max-width: 100%; /* Ограничение по ширине */
+    margin: 0 auto;
+    overflow: hidden; /* Скрываем элементы, выходящие за пределы контейнера */
+  }
+  
+  .slider-content {
+    display: flex; /* Используем flexbox для горизонтального расположения элементов */
+    transition: transform 0.5s ease-in-out; /* Анимация при перелистывании */
+    width: 70%; /* Контейнер занимает всю ширину */
+  }
+  
+  .project {
+    
+    flex: 0 0 100%; /* Каждый элемент занимает 100% ширины контейнера */
+    box-sizing: border-box; /* Учитываем padding и border в ширине */
+    padding: 20px;
+  }
+  
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slider-arrow.left {
+    left: 10px;
+  }
+  
+  .slider-arrow.right {
+    right: 10px;
+  }
+  
+  .slider-dots {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dot.active {
+    background: #333;
+  }
+  

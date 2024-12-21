@@ -1,0 +1,34 @@
+/* Add margin between slider components */
+.slider {
+    margin: 70px 0px; /* Adjust the margin as needed */
+  }
+  
+  /* Center the button horizontally */
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Center horizontally and add vertical spacing */
+    text-align: center;
+  }
+  
+  /* Optional: Add some spacing between carousel cells */
+  .carousel-cell {
+    margin: 0 70px; /* Add horizontal spacing between cells */
+    
+  }
+  
+  /* Optional: Style the dots for better visibility */
+  .flickity-page-dots .dot {
+    background: #000; /* Black dots */
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  
+  .flickity-page-dots .dot.is-selected {
+    background: #ffd600; /* Highlighted dot color */
+    opacity: 1;
+  }
