@@ -27,7 +27,7 @@ const projects = [
     <a
       href="https://innohassle.ru"
       className="button"
-      style={{ "--clr": "#ffd600" } as React.CSSProperties}
+      style={{ "--clr": "#9fee00" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -50,12 +50,13 @@ const projects = [
     <a
       href="https://gitlab.pg.innopolis.university/d.tolmeneva/elective-generator"
       className="button"
-      style={{ "--clr": "#ffd600" } as React.CSSProperties}
+      style={{ "--clr": "#ff7c00" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
     </a>
   </li>,
+  
   <li key="chessmaster" className='project'>
     <Image
       alt=""
@@ -73,12 +74,34 @@ const projects = [
     <a
       href="https://github.com/dorley174/Chess-Master"
       className="button"
-      style={{ "--clr": "#ff0047" } as React.CSSProperties}
+      style={{ "--clr": "#3e13af" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
     </a>
   </li>,
+  <li key="solutions" className='project'>
+  <Image
+    alt=""
+    src="/images/innohassle.png"
+    className="project__img"
+    width={500}
+    height={500}
+    style={{ objectFit: "cover", width: "100%" }}
+  />
+  <h4 className="project__title">Contest solutions</h4>
+  <h5 className="project__description">
+  My solutions to various tasks collected from all over the Internet. <br /> Here you can find solutions to both Olympiad problems <br /> and test tasks from interviews and various courses taken.
+  </h5>
+  <a
+    href="https://github.com/dorley174/"
+    className="button"
+    style={{ "--clr": "#ffd600" } as React.CSSProperties}
+  >
+    <span>See my GitHub here</span>
+    <i></i>
+  </a>
+</li>,
   <li key="meetime" className='project'>
     <Image
       alt=""
@@ -96,12 +119,35 @@ const projects = [
     <a
       onClick={() => alert("At the request of the customer, it is currently closed to public access.")}
       className="button"
-      style={{ "--clr": "#39ff14" } as React.CSSProperties}
+      style={{ "--clr": "#ff0000" } as React.CSSProperties}
     >
       <span>private access</span>
       <i></i>
     </a>
   </li>,
+  <li key="psychoai" className='project'>
+  <Image
+    alt=""
+    src="/images/ai.jpg"
+    className="project__img"
+    width={500}
+    height={500}
+    style={{ objectFit: "cover", width: "100%" }}
+  />
+  <h4 className="project__title">PsychoAI Chatbot</h4>
+  <h5 className="project__description">
+  A neural network simulating a session with a psychologist. <br /> It works on the basis of OpenAI neural networks <br /> with additions specific to a person’s mental state.
+  </h5>
+  <a
+    href="#!"
+    className="button"
+    style={{ "--clr": "#7e07a9" } as React.CSSProperties}
+  >
+    <span>To be announced </span>
+    <i></i>
+  </a>
+</li>,
+  
 ];
 
 const App: React.FC = () => {
