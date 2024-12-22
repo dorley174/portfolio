@@ -16,14 +16,14 @@ const Header: React.FC = () => {
   };
 
   const scrollToSecond = () => {
-    const fe1 = document.getElementById('second');
+    const fe1 = document.getElementById('exp');
     if(fe1) {
       fe1.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   const scrollToThird = () => {
-    const fe = document.getElementById('third');
+    const fe = document.getElementById('slider');
     if(fe) {
       fe.scrollIntoView({ behavior: 'smooth' });
     }
@@ -45,10 +45,10 @@ const Header: React.FC = () => {
     <h1 className="nav">
       <div className="container">
         <div className="nav-row">
-          <button className='nav-list__item'  onClick={scrollToFirst}><a className='nav-list__link' style={{marginRight: "150px"}}>EN</a></button>
+          <button className='nav-list__item'><a className='nav-list__link' style={{marginRight: "150px"}}></a></button>
           <button className='nav-list__item' onClick={scrollToFirst}><a className='nav-list__link'>About me</a></button>
-          <button className='nav-list__item' onClick={scrollToSecond}><a className='nav-list__link'>Projects</a></button>
-          <button className='nav-list__item' onClick={scrollToThird}><a className='nav-list__link'>Skills</a></button>
+          <button className='nav-list__item' onClick={scrollToSecond}><a className='nav-list__link'>Experience</a></button>
+          <button className='nav-list__item' onClick={scrollToThird}><a className='nav-list__link'>Projects</a></button>
           <button className='nav-list__item' onClick={scrollToFourth}><a className='nav-list__link'>Contacts</a></button>
           <button className='nav-list__item' ><a className='nav-list__link' style={{marginLeft: "150px"}}></a></button>
         </div>

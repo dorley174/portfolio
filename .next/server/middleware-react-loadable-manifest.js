@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST='{"..\\\\node_modules\\\\react-flickity-component\\\\dist\\\\react-flickity-component.es.js -> flickity":{"id":8463,"files":["static/chunks/463.52668b990b84dc18.js"]}}';
+self.__REACT_LOADABLE_MANIFEST="{\"..\\\\node_modules\\\\react-flickity-component\\\\dist\\\\react-flickity-component.es.js -> flickity\":{\"id\":\"..\\\\node_modules\\\\react-flickity-component\\\\dist\\\\react-flickity-component.es.js -> flickity\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_flickity_js_index_js.js\"]}}"

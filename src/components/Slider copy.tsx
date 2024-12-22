@@ -18,7 +18,8 @@ const Slider: React.FC<SliderProps> = ({ projects }) => {
   };
 
   return (
-    <div className="slider">
+    <div id="slider" className="slider">
+      <h1 className="title">Projects </h1>
       <Flickity
         className={"carousel"} // Default class for Flickity
         elementType={"div"} // Default container element

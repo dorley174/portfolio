@@ -1,0 +1,1118 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/css/main.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://unpkg.com/open-props");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;500;700&display=swap');
+
+
+
+/* * {
+    border: 1px solid red;
+}*/
+
+
+html, body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 90%; 
+
+}
+
+
+.amcontainer {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 90%;
+    height: 100px;
+}
+
+.amnav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+.footer {
+        
+    background-color: black;
+    width: 100%;
+    height:100px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-top: 2px solid #00ffa1;
+}
+
+.contact {
+
+    font-size: 30px;
+}
+
+.social-icons {
+
+    display: flex;
+    margin: 10px 0px;
+}
+
+.social-icon {
+
+    
+    max-height: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 0;
+  } 
+
+/*навигация*/
+
+.nav {
+    /*position: fixed;*/
+    
+    flex-direction: row;
+    
+
+    width: 100%;
+    background-color: #171718;
+    color: #FFFFFF;
+    padding: 30px 0;
+    border-bottom: 1px solid #00ffa1;
+}
+
+
+.nav-row {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo strong {
+    font-weight: 700;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.bgicons{
+    width: 100%;
+}
+
+.social-icon {
+    margin:0 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 0px;
+    max-width: 50px;
+    max-height: 50px;
+    
+}
+
+.nav-list__link{
+    color: white;
+}
+
+.nav-list__link--active {
+    position: relative;
+}
+
+.nav-list__link--active::before{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #ff005e;
+}
+
+
+
+.comic__page{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #171718;
+    height: 1000px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header2 {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* border-bottom: 1px solid #00ffa1; */
+    background-color: white;
+    color: #FFFFFF;
+    min-height: 900px;
+    padding: 40px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center; /* по центру */
+}
+
+.header {
+    
+    width: 100%;
+    display: flex; /* Включаем flexbox для родителя */
+    justify-content:space-around; /* Распределяем дочерние элементы по ширине */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #00ffa1; 
+    background-color: #171718;
+    color: #FFFFFF;
+    min-height: 750px;
+    padding: 100px 50px;
+    
+    font-size: 16px;
+    text-align: center; /* по центру */
+}
+
+.header__wrapper {
+    justify-content: space-between; 
+    flex: 1 1;
+    width: 50%; /* Ширина 50% */    
+    box-sizing: border-box; /* Учитываем отступы и границы в ширине */
+    display: flex; /* Включаем flexbox для дочернего элемента */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.header__wrapper__photo {
+    padding-top:100px;
+    /*padding: 100px 0px;*/
+    flex: 1 1;
+    width: 50%; /* Ширина 50% */
+    box-sizing: border-box; /* Учитываем отступы и границы в ширине */
+    display: flex; /* Включаем flexbox для дочернего элемента */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    
+}
+
+
+
+
+
+
+
+/* проекты */
+.section {
+    padding: 70px 0;
+    
+
+}
+
+.title1 {
+    margin-bottom: 60px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ff005e;
+    text-align: center;
+    /* font-style: italic; */
+}
+
+
+.title2 {
+    margin-bottom: 60px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ff005e;
+    text-align: center;
+    /* font-style: italic; */
+}
+
+.title3 {
+    margin-top: 1000px;
+    margin-bottom: 60px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ff005e;
+    text-align: center;
+    /* font-style: italic; */
+}
+
+.projects {
+    
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+    justify-content: center;
+    
+}
+
+.project {
+    flex: 0 0 100%; /* Каждый элемент занимает 100% ширины контейнера */
+    box-sizing: border-box; /* Учитываем padding и border в ширине */
+    padding: 20px;
+    
+    margin: 25px 20px;
+    text-align: center;
+    
+    padding-bottom: 30px;
+    min-width: 75%;
+    max-width: 100%;
+    
+    background-color: white;
+    
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    
+    display: flex; /* Включаем flexbox */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    /*justify-content: space-between;*/
+}
+
+
+.project__img{
+    width: 100%; /* Ширина изображения 100% от контейнера */
+    max-height: 400px;
+    height: auto;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+.home__img{
+    width: 100%; /* Ширина изображения 100% от контейнера */
+    padding-top:50px;
+    height: auto;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+.project__title{
+    
+    text-align: center;
+    color: black;
+    padding: 15px 20px 25px;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 700;
+    
+}
+
+.project__description{
+    
+    
+    text-align: center;
+    color: black;
+    padding: 0px 20px 25px;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+
+.btn{
+    
+    margin-bottom: 10px;
+    display: inline-block;
+    height: 48px;
+    padding: 12px 28px;
+    border-radius: 5px;
+    background-color: #00ffa1;
+    font-style: italic;
+    color:black;
+    
+    letter-spacing: 0.15px;
+    font-weight: 500;
+}
+
+.btn__comic{
+    
+    margin-bottom: 10px;
+    display: inline-block;
+    height: 48px;
+    padding: 12px 28px;
+    border-radius: 5px;
+    background-color: #ff005e;
+    font-style: italic;
+    color:black;
+    
+    letter-spacing: 0.15px;
+    font-weight: 500;
+}
+
+
+/* */
+.header2 {
+
+    background-color: white;
+    color: #ff005e;
+    min-height: 695px;
+    padding: 40px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center; /* по центру */
+    
+}
+.header3 {
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* border-bottom: 1px solid #00ffa1; */
+    background-color: white;
+    /* color: #FFFFFF;
+    min-height: 695px;
+    padding: 40px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center; /* по центру */ 
+    
+}
+
+.header__title{
+    font-size: 60px;
+    margin: 40px 35px;
+    text-align: left;
+    
+}
+
+.header__text{
+    margin-left: 35px;
+    padding-top: 0px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.header__title__photo{
+    font-size: 60px;
+    margin: 40px 75px;
+    text-align: right;
+    
+}
+
+.styled-line {
+    border: none; /* Убираем стандартную границу */
+    height: 2px; /* Высота полосы */
+    background-color: #fff; /* Цвет полосы */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для эффекта */
+    margin:0px 35px;
+    margin-bottom: 50px;
+}
+
+
+.header__text__photo{
+    margin: 0px 75px;
+    margin-bottom: 40px;
+    text-align: right;
+    font-size: 24px;
+}
+
+.page3-container {   
+    display: flex;
+    background-color: #00ffa1; 
+    
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.list-container {
+
+    width: max-content;
+   /*  background-color: red; */
+    justify-content: center;
+    
+    padding: 0 15px;
+    flex-wrap: wrap;
+    height: 100%;
+    
+}
+
+.skills{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    
+    margin: 20px;
+    padding: 10px;
+    
+    
+    
+    width: auto;
+    background-color: white;
+    /* border: 1px solid #00ffa1; */
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    font-weight: 500;
+    color:black;
+    border-radius: 5px;
+}
+
+.photo-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: auto;
+    margin: 20px;
+    
+}
+
+.photo-text {
+    margin-top: 2%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    /* font-style: italic; */
+}
+
+.comic__img {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.button {
+    position: relative;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    transition: 0.2s;
+}
+
+.button:hover {
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: var(--clr);
+    color: var(--clr);
+    animation: box 3s infinite;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #272833;
+
+}
+
+.button span {
+    position: relative;
+    z-index: 1;
+}
+
+.button i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.button i::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272833;
+    transition: 0.2s;
+}
+
+.button:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+}
+
+.button i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background:#272833;
+    transition: 0.2s;
+}
+
+.button:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes box {
+    0% {
+        box-shadow: #27272c;
+    }
+    50% {
+        box-shadow: 0 0 25px var(--clr);
+    }
+    100% {
+        box-shadow: #27272c;
+    }
+}
+
+.navbuttonbody {
+    background: var(--gradient-1);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.navbutton {
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-6);
+    font-size: var(--font-size-5);
+    color: black;
+    background: var(--gray-0);
+    border: 0;
+    padding: var(--size-4) var(--size-8);
+    transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+    transition: transform 0.1s;
+    position: relative;
+}
+
+.navbutton {
+    --y:10;
+    --scale:1.1;
+    --border-scale:1;
+}
+
+.navbutton:active {
+    --y:5%;
+    --scale:0.9;
+    --border-scale:0.9, 0.8;
+}
+
+.navbutton::before {
+    content: "";
+    position: absolute;
+    inset: calc(var(--size-3) * -1);
+    transform: scale(var(--border-scale, 0));
+    transition: transform 0.125s;
+    --angle-one:105deg;
+    --angle-two:290 deg;
+    --spread-one:30deg;
+    --spread-two:40deg;
+    --start-one:calc(var(--angle-one) - (var(--spread-one) * 0.5));
+    --start-two:calc(var(--angle-two) - (var(--spread-two) * 0.5));
+    --end-one:calc(var(--angle-one) + (var(--spread-one) * 0.5));
+    --end-two:calc(var(--angle-two) + (var(--spread-two) * 0.5));
+
+    -webkit-mask: conic-gradient(
+        transparent 0 var(--start-one),
+        white var(--start-one) var(--end-one),
+        transparent var(--end-one) var(--start-two),
+        white var(--start-two) var(--end-two),
+        transparent var(--end-two)
+    );
+
+    mask:conic-gradient(
+        transparent 0 var(--start-one),
+        white var(--start-one) var(--end-one),
+        transparent var(--end-one) var(--start-two),
+        white var(--start-two) var(--end-two),
+        transparent var(--end-two)
+    );
+}
+
+.slider {
+    position: relative;
+    width: 100%; /* Слайдер занимает всю ширину экрана */
+    max-width: 100%; /* Ограничение по ширине */
+    margin: 0 auto;
+    overflow: hidden; /* Скрываем элементы, выходящие за пределы контейнера */
+  }
+  
+  .slider-content {
+    display: flex; /* Используем flexbox для горизонтального расположения элементов */
+    transition: transform 0.5s ease-in-out; /* Анимация при перелистывании */
+    width: 70%; /* Контейнер занимает всю ширину */
+  }
+  
+  
+  
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slider-arrow.left {
+    left: 10px;
+  }
+  
+  .slider-arrow.right {
+    right: 10px;
+  }
+  
+  .slider-dots {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dot.active {
+    background: #333;
+  }
+  
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/css/reset.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/css/skills.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+.tech-stack-page {
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tech-stack-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .tech-stack-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 50px;
+    max-width: 600px;
+  }
+  
+  .tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .tech-stack-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .tech-stack-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tech-icon {
+    font-size: 4rem;
+    
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .tech-stack-box h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .tech-stack-box p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ff005e;
+    text-align: center;
+    /* font-style: italic; */
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./node_modules/flickity/css/flickity.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+/*! Flickity v2.3.0
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/css/flickity.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/* Add margin between slider components */
+.slider {
+    margin: 70px 0px; /* Adjust the margin as needed */
+  }
+  
+  /* Center the button horizontally */
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Center horizontally and add vertical spacing */
+    text-align: center;
+  }
+  
+  /* Optional: Add some spacing between carousel cells */
+  .carousel-cell {
+    margin: 0 70px; /* Add horizontal spacing between cells */
+    
+  }
+  
+  /* Optional: Style the dots for better visibility */
+  .flickity-page-dots .dot {
+    background: #000; /* Black dots */
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  
+  .flickity-page-dots .dot.is-selected {
+    background: #ffd600; /* Highlighted dot color */
+    opacity: 1;
+  }
+
+  .title {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ff005e;
+    text-align: center;
+    /* font-style: italic; */
+}

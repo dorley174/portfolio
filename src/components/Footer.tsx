@@ -14,9 +14,9 @@ const Footer: React.FC = () => {
           {/* <a href="https://www.youtube.com/channel/UCcvCAxRYOdrV-bnIE8otVTQ">
             <img className="social-icon" src="./images/youtube.png" alt="YouTube" />
           </a> */}
-          <a href="https://www.steamcommunity.com/id/Dorley74">
+          {/* <a href="https://www.steamcommunity.com/id/Dorley74">
             <img className="social-icon" src="./images/steam.png" alt="Steam" />
-          </a>
+          </a>*/}
           <a href="https://github.com/dorley174">
             <img className="social-icon" src="./images/github.png" alt="GitHub" />
           </a>
