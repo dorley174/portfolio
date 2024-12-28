@@ -72,7 +72,7 @@ const Header: React.FC = () => {
 
         <hr className="styled-line"></hr>
 
-        <a href='https://drive.google.com/file/d/1PwJ-SEh6M_7wtmgvxb867SSprXoWpjux/view?usp=sharing' className='button' style={{ '--clr': '#00ffa1' } as React.CSSProperties}>
+        <a href='https://drive.google.com/file/d/1BQefnzL6HOdVOZLi-v1IHrpbUWoRVSrG/view?usp=sharing' className='button' style={{ '--clr': '#00ffa1' } as React.CSSProperties}>
           <span>Download CV</span><i></i>
         </a>
 
