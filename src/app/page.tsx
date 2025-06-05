@@ -2,15 +2,9 @@
 import Image from 'next/image';
 import '../css/main.css';
 import Header from '../components/Header';
-import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Footer from '../components/Footer';
-import Slider from '../components/Slider copy';
-const showMessage = () => {
-  alert(
-    'По требованию заказчика проект закрыт для публичного доступа. \n\nAt the request of the customer, the project is closed to public access.'
-  );
-};
+import Slider from '../components/Slider';
 
 const projects = [
   <li key="innohassle" className="project">
@@ -24,12 +18,40 @@ const projects = [
     />
     <h4 className="project__title">InnoHassle</h4>
     <h5 className="project__description">
-      A huge ecosystem of Innopolis University students. <br /> A huge number of
-      integrations with student options - <br /> schedules of classes and sports
+      An ecosystem of Innopolis University students. A huge number <br /> of
+      integrations with student options - schedules of classes and sports
+      <br />
       sections, calendars, timers and much more.
     </h5>
     <a
       href="https://innohassle.ru"
+      className="button"
+      style={{ '--clr': '#9fee00' } as React.CSSProperties}
+    >
+      <span>Available now</span>
+      <i></i>
+    </a>
+  </li>,
+  <li key="cluster" className="project">
+    <Image
+      alt=""
+      src="/images/MoodleCluster.jpg"
+      className="project__img"
+      width={500}
+      height={500}
+      style={{ objectFit: 'cover', width: '100%' }}
+    />
+    <h4 className="project__title">Moodle Cluster</h4>
+    <h5 className="project__description">
+      Linux-based analyzing system of the most popular stydying <br />
+      website - Moodle - which collects statistics of any site load.
+      <br />
+      It is based on the interaction between the collection
+      <br /> of information using Node Exporter and Prometheus, <br />
+      as well as their visualization using Grafana.
+    </h5>
+    <a
+      href="https://github.com/dorley174/MoodleCluster"
       className="button"
       style={{ '--clr': '#9fee00' } as React.CSSProperties}
     >
@@ -55,13 +77,62 @@ const projects = [
     <a
       href="https://gitlab.pg.innopolis.university/d.tolmeneva/elective-generator"
       className="button"
-      style={{ '--clr': '#ff7c00' } as React.CSSProperties}
+      style={{ '--clr': '#9fee00' } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
     </a>
   </li>,
 
+  <li key="dnp" className="project">
+    <Image
+      alt=""
+      src="/images/Dnp.jpg"
+      className="project__img"
+      width={500}
+      height={500}
+      style={{ objectFit: 'cover', width: '100%' }}
+    />
+    <h4 className="project__title">
+      Distributed Text Mining & <br />
+      Sentiment Analysis
+    </h4>
+    <h5 className="project__description">
+      The command project, which implements a distributed system for <br />
+      processing and analyzing texts with a focus on tonality analysis.
+    </h5>
+    <a
+      href="https://github.com/oELYAo/DNP_project"
+      className="button"
+      style={{ '--clr': '#9fee00' } as React.CSSProperties}
+    >
+      <span>Available now</span>
+      <i></i>
+    </a>
+  </li>,
+  <li key="psychoai" className="project">
+    <Image
+      alt=""
+      src="/images/ai.jpg"
+      className="project__img"
+      width={500}
+      height={500}
+      style={{ objectFit: 'cover', width: '100%' }}
+    />
+    <h4 className="project__title">PsychoAI Chatbot</h4>
+    <h5 className="project__description">
+      An AI assistent that can help you with any problem you say. <br /> Uses
+      YandexGPT and combines with special prompt-building system.
+    </h5>
+    <a
+      href="https://github.com/dorley174/ai_chatbot"
+      className="button"
+      style={{ '--clr': '#7e07a9' } as React.CSSProperties}
+    >
+      <span>on beta testing</span>
+      <i></i>
+    </a>
+  </li>,
   <li key="chessmaster" className="project">
     <Image
       alt=""
@@ -79,16 +150,17 @@ const projects = [
     <a
       href="https://github.com/dorley174/Chess-Master"
       className="button"
-      style={{ '--clr': '#3e13af' } as React.CSSProperties}
+      style={{ '--clr': '#9fee00' } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
     </a>
   </li>,
+
   <li key="solutions" className="project">
     <Image
       alt=""
-      src="/images/innohassle.png"
+      src="/images/contests.png"
       className="project__img"
       width={500}
       height={500}
@@ -105,7 +177,7 @@ const projects = [
       className="button"
       style={{ '--clr': '#ffd600' } as React.CSSProperties}
     >
-      <span>See my GitHub here</span>
+      <span>See my GitHub</span>
       <i></i>
     </a>
   </li>,
@@ -126,37 +198,13 @@ const projects = [
     <a
       onClick={() =>
         alert(
-          'At the request of the customer, it is currently closed to public access.'
+          'По требованию заказчика, этот проект сейчас закрыт для публичного доступа. \n\nAt the request of the customer, it is currently closed to public access.'
         )
       }
       className="button"
       style={{ '--clr': '#ff0000' } as React.CSSProperties}
     >
       <span>private access</span>
-      <i></i>
-    </a>
-  </li>,
-  <li key="psychoai" className="project">
-    <Image
-      alt=""
-      src="/images/ai.jpg"
-      className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
-    />
-    <h4 className="project__title">PsychoAI Chatbot</h4>
-    <h5 className="project__description">
-      A neural network simulating a session with a psychologist. <br /> It works
-      on the basis of OpenAI neural networks <br /> with additions specific to a
-      person’s mental state.
-    </h5>
-    <a
-      href="#!"
-      className="button"
-      style={{ '--clr': '#7e07a9' } as React.CSSProperties}
-    >
-      <span>To be announced </span>
       <i></i>
     </a>
   </li>,

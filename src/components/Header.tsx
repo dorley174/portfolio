@@ -48,27 +48,20 @@ const Header: React.FC = () => {
       <h1 className="nav">
         <div className="container">
           <div className="nav-row">
-            <button className="nav-list__item">
-              <a className="nav-list__link" style={{ marginRight: '150px' }}>
-                EN
-              </a>
-            </button>
             <button className="nav-list__item" onClick={scrollToFirst}>
               <a className="nav-list__link">About me</a>
             </button>
+            <p style={{ color: '#00ffa1' }}>|</p>
             <button className="nav-list__item" onClick={scrollToSecond}>
               <a className="nav-list__link">Experience</a>
             </button>
+            <p style={{ color: '#00ffa1' }}>|</p>
             <button className="nav-list__item" onClick={scrollToThird}>
               <a className="nav-list__link">Projects</a>
             </button>
+            <p style={{ color: '#00ffa1' }}>|</p>
             <button className="nav-list__item" onClick={scrollToFourth}>
               <a className="nav-list__link">Contacts</a>
-            </button>
-            <button className="nav-list__item">
-              <a className="nav-list__link" style={{ marginLeft: '150px' }}>
-                Dark
-              </a>
             </button>
           </div>
         </div>
@@ -77,11 +70,11 @@ const Header: React.FC = () => {
       <div className="header" id="first">
         <div className="bio">
           <h1 className="header__title">
-            <strong>
-              Danil Valiev <em> </em>
-            </strong>{' '}
-            <br />
+            <strong>Danil Valiev</strong> <br />
           </h1>
+          <h3 className="header__title" style={{ fontSize: '30px' }}>
+            aka <strong>Dorley</strong> <br />
+          </h3>
           <div className="header__text">
             <a
               style={{ color: '#fff' } as React.CSSProperties}
@@ -94,21 +87,30 @@ const Header: React.FC = () => {
             </a>{' '}
             <br /> <br />
             <p>
-              An Entrepreneur who works in Software, <br /> Game Dev and Content
-              Creation.
+              An Entrepreneur who works in Software, FronEnd Development and
+              Content Creation.
             </p>
           </div>
 
           <hr className="styled-line"></hr>
-
-          <a
-            href="https://drive.google.com/file/d/1BQefnzL6HOdVOZLi-v1IHrpbUWoRVSrG/view?usp=sharing"
-            className="button"
-            style={{ '--clr': '#00ffa1' } as React.CSSProperties}
-          >
-            <span>Download CV</span>
-            <i></i>
-          </a>
+          <div className="links">
+            <a
+              href="https://github.com/dorley174"
+              className="button"
+              style={{ '--clr': '#00ffa1' } as React.CSSProperties}
+            >
+              <span>View my GitHub</span>
+              <i></i>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1BQefnzL6HOdVOZLi-v1IHrpbUWoRVSrG/view?usp=sharing"
+              className="button"
+              style={{ '--clr': '#E40045' } as React.CSSProperties}
+            >
+              <span>Download CV</span>
+              <i></i>
+            </a>
+          </div>
         </div>
 
         <div className="bio-photo">
