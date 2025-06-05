@@ -1,48 +1,75 @@
 import React from 'react';
 
+const iconStyle = {
+  width: '40px',
+  height: '40px',
+  fill: 'white',
+  transition: 'fill 0.2s ease',
+};
+
 const Footer: React.FC = () => {
   return (
     <div id="fourth">
       <div className="footer">
-        <a
-          href="mailto:d.valiev@innopolis.university"
-          className="logo nav-list__link--active"
-        >
-          Danilv74@mail.ru
-        </a>
+        <div className="">
+          <a
+            href="mailto:d.valiev@innopolis.university"
+            className="logo nav-list__link--active"
+          >
+            Danilv74@mail.ru
+          </a>
+        </div>
+
         <div className="social-icons">
-          <a href="https://www.vk.com/dorley">
-            <img className="social-icon" src="./images/vk.png" alt="VK" />
-          </a>
-          {/* <a href="https://www.youtube.com/channel/UCcvCAxRYOdrV-bnIE8otVTQ">
-            <img className="social-icon" src="./images/youtube.png" alt="YouTube" />
-          </a> */}
-          {/* <a href="https://www.steamcommunity.com/id/Dorley74">
-            <img className="social-icon" src="./images/steam.png" alt="Steam" />
-          </a>*/}
-          <a href="https://github.com/dorley174">
-            <img
-              className="social-icon"
-              src="./images/github.png"
-              alt="GitHub"
-            />
-          </a>
-          {/* <a href="https://discordapp.com/users/579673615902179330">
-            <img className="social-icon" src="./images/discord.png" alt="Discord" />
-          </a> */}
-          <a href="https://telegram.org/dorley">
-            <img
-              className="social-icon"
-              src="./images/telegram.png"
-              alt="Telegram"
-            />
-          </a>
-          {/* <a href="https://twitch.tv/dorleyyyy">
-            <img className="social-icon" src="./images/twitch.png" alt="twitch" />
-          </a>
-          <a href="https://ru.pinterest.com/Dorleyy/">
-            <img className="social-icon" src="./images/pinterest.png" alt="Pinterest" />
-          </a> */}
+          <div style={{ display: 'flex', gap: '16px' }}>
+            {/* GitHub */}
+            <a
+              href="https://github.com/dorley174"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                style={iconStyle}
+              >
+                <path d="M12 0.297C5.373 0.297 0 5.67 0 12.297c0 5.297 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.304.762-1.604-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.304-.536-1.53.117-3.18 0 0 1.008-.322 3.3 1.23a11.53 11.53 0 0 1 3-.404c1.02.004 2.045.138 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.65.243 2.876.12 3.18.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.624-5.475 5.922.43.372.823 1.103.823 2.222 0 1.604-.015 2.896-.015 3.286 0 .32.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </a>
+
+            {/* VK */}
+            <a
+              href="https://vk.com/dorley"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="VK"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                style={iconStyle}
+              >
+                <path d="M12.005 0C5.373 0 0 5.373 0 12.005c0 6.633 5.373 12.005 12.005 12.005s12.005-5.372 12.005-12.005S18.638 0 12.005 0Zm5.545 13.823h-1.474c-.521 0-.604-.41-1.452-1.257-.766-.765-1.094-.865-1.285-.865-.258 0-.33.076-.33.435v1.029c0 .314-.09.588-.831.588-1.543 0-3.253-1.341-4.5-3.472-1.11-1.878-1.48-3.096-1.48-3.32 0-.168.127-.316.396-.316h1.474c.346 0 .48.154.611.51.67 1.93 1.808 3.618 2.147 3.618.168 0 .238-.076.238-.512v-1.98c-.053-.911-.547-.984-.547-1.269 0-.127.102-.26.314-.26h2.334c.29 0 .372.123.372.475v2.634c0 .283.129.38.211.38.168 0 .318-.094.624-.403.944-1.02 1.642-2.517 1.642-2.517.09-.191.24-.318.54-.318h1.474c.406 0 .487.203.406.486-.168.559-1.4 2.384-1.67 2.696-.314.367-.406.367-.406.548 0 .164.092.238.382.455.303.237.72.661 1.015 1.096.322.456.585.87.67 1.116.09.25-.05.48-.424.48Z" />
+              </svg>
+            </a>
+
+            {/* Telegram */}
+            <a
+              href="https://t.me/dorley"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                style={iconStyle}
+              >
+                <path d="M9.993 16.2l-.4 4.2c.57 0 .82-.24 1.13-.52l2.72-2.5 5.64 4.13c1.04.57 1.79.27 2.07-.96l3.76-17.84c.35-1.62-.6-2.25-1.66-1.86L1.33 9.27c-1.6.62-1.57 1.5-.27 1.9l4.97 1.55L18.77 4.99c.58-.38 1.11-.17.67.21L9.993 16.2z" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>

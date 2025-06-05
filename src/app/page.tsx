@@ -68,7 +68,7 @@ const projects = [
       height={500}
       style={{ objectFit: 'cover', width: '100%' }}
     />
-    <h4 className="project__title">ElectGen</h4>
+    <h4 className="project__title">Elective Generator</h4>
     <h5 className="project__description">
       Automatic placement of students from different courses into their chosen{' '}
       <br />
@@ -144,8 +144,8 @@ const projects = [
     />
     <h4 className="project__title">Chess Master</h4>
     <h5 className="project__description">
-      Discord bot that allows you to simulate a chess session. <br /> Based on
-      Stockfish - the Free Chess Engine with UCI support.
+      A simple Discord bot that allows you to simulate a chess session. <br />{' '}
+      Based on Stockfish - the Free Chess Engine with UCI support.
     </h5>
     <a
       href="https://github.com/dorley174/Chess-Master"
@@ -153,6 +153,33 @@ const projects = [
       style={{ '--clr': '#9fee00' } as React.CSSProperties}
     >
       <span>Available now</span>
+      <i></i>
+    </a>
+  </li>,
+
+  <li key="GameOfLife" className="project">
+    <Image
+      alt=""
+      src="/images/gol.gif"
+      className="project__img"
+      width={500}
+      height={500}
+      style={{ objectFit: 'cover', width: '100%' }}
+    />
+    <h4 className="project__title">Game of Life</h4>
+    <h5 className="project__description">
+      A cellular machine that implements the same name
+      <br /> about the life of the created colonies for the implementation
+      <br />
+      of the Turing machine. The game works in window mode <br /> and is written
+      on C ++ using the SDL library.
+    </h5>
+    <a
+      href="https://github.com/dorley174/Game-of-life"
+      className="button"
+      style={{ '--clr': '#7e07a9' } as React.CSSProperties}
+    >
+      <span>on BETA testing</span>
       <i></i>
     </a>
   </li>,
