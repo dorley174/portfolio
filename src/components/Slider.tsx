@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "../css/main.css";
+import React, { useState } from 'react';
+import '../css/main.css';
 
 interface SliderProps {
   projects: React.ReactNode[]; // Массив React-элементов
@@ -51,7 +51,7 @@ const Slider: React.FC<SliderProps> = ({ projects }) => {
         {projects.map((_, index) => (
           <span
             key={index}
-            className={`dot ${index === currentIndex ? "active" : ""}`}
+            className={`dot ${index === currentIndex ? 'active' : ''}`}
             onClick={() => setCurrentIndex(index)}
           ></span>
         ))}
