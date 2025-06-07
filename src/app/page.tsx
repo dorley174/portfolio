@@ -248,6 +248,7 @@ const App: React.FC = () => {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=network_intelligence"
       />
+      <link rel="icon" href="/favicon.ico" />
       <Header />
       <Skills />
       <Slider projects={projects} />
