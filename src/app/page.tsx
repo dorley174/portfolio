@@ -1,10 +1,10 @@
-'use client';
-import Image from 'next/image';
-import '../css/main.css';
-import Header from '../components/Header';
-import Skills from '../components/Skills';
-import Footer from '../components/Footer';
-import Slider from '../components/Slider';
+"use client";
+import Image from "next/image";
+import "../css/main.css";
+import Header from "../components/Header";
+import Skills from "../components/Skills";
+import Footer from "../components/Footer";
+import Slider from "../components/Slider";
 
 const projects = [
   <li key="innohassle" className="project">
@@ -14,7 +14,7 @@ const projects = [
       className="project__img"
       width={500}
       height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: "cover", width: "100%" }}
     />
     <h4 className="project__title">InnoHassle</h4>
     <h5 className="project__description">
@@ -26,7 +26,7 @@ const projects = [
     <a
       href="https://innohassle.ru"
       className="button"
-      style={{ '--clr': '#9fee00' } as React.CSSProperties}
+      style={{ "--clr": "#9fee00" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -39,7 +39,7 @@ const projects = [
       className="project__img"
       width={500}
       height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: "cover", width: "100%" }}
     />
     <h4 className="project__title">Moodle Cluster</h4>
     <h5 className="project__description">
@@ -53,7 +53,7 @@ const projects = [
     <a
       href="https://github.com/dorley174/MoodleCluster"
       className="button"
-      style={{ '--clr': '#9fee00' } as React.CSSProperties}
+      style={{ "--clr": "#9fee00" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -66,18 +66,18 @@ const projects = [
       className="project__img"
       width={500}
       height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: "cover", width: "100%" }}
     />
     <h4 className="project__title">Elective Generator</h4>
     <h5 className="project__description">
-      Automatic placement of students from different courses into their chosen{' '}
+      Automatic placement of students from different courses into their chosen{" "}
       <br />
       summer electives based on their GPA and personal priorities
     </h5>
     <a
       href="https://gitlab.pg.innopolis.university/d.tolmeneva/elective-generator"
       className="button"
-      style={{ '--clr': '#9fee00' } as React.CSSProperties}
+      style={{ "--clr": "#9fee00" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -91,7 +91,7 @@ const projects = [
       className="project__img"
       width={500}
       height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: "cover", width: "100%" }}
     />
     <h4 className="project__title">
       Distributed Text Mining & <br />
@@ -104,7 +104,7 @@ const projects = [
     <a
       href="https://github.com/oELYAo/DNP_project"
       className="button"
-      style={{ '--clr': '#9fee00' } as React.CSSProperties}
+      style={{ "--clr": "#9fee00" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -117,7 +117,7 @@ const projects = [
       className="project__img"
       width={500}
       height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: "cover", width: "100%" }}
     />
     <h4 className="project__title">PsychoAI Chatbot</h4>
     <h5 className="project__description">
@@ -127,7 +127,7 @@ const projects = [
     <a
       href="https://github.com/dorley174/ai_chatbot"
       className="button"
-      style={{ '--clr': '#7e07a9' } as React.CSSProperties}
+      style={{ "--clr": "#7e07a9" } as React.CSSProperties}
     >
       <span>on beta testing</span>
       <i></i>
@@ -140,17 +140,17 @@ const projects = [
       className="project__img"
       width={500}
       height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: "cover", width: "100%" }}
     />
     <h4 className="project__title">Chess Master</h4>
     <h5 className="project__description">
-      A simple Discord bot that allows you to simulate a chess session. <br />{' '}
+      A simple Discord bot that allows you to simulate a chess session. <br />{" "}
       Based on Stockfish - the Free Chess Engine with UCI support.
     </h5>
     <a
       href="https://github.com/dorley174/Chess-Master"
       className="button"
-      style={{ '--clr': '#9fee00' } as React.CSSProperties}
+      style={{ "--clr": "#9fee00" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -164,7 +164,7 @@ const projects = [
       className="project__img"
       width={500}
       height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: "cover", width: "100%" }}
     />
     <h4 className="project__title">Game of Life</h4>
     <h5 className="project__description">
@@ -177,7 +177,7 @@ const projects = [
     <a
       href="https://github.com/dorley174/Game-of-life"
       className="button"
-      style={{ '--clr': '#7e07a9' } as React.CSSProperties}
+      style={{ "--clr": "#7e07a9" } as React.CSSProperties}
     >
       <span>on BETA testing</span>
       <i></i>
@@ -191,18 +191,18 @@ const projects = [
       className="project__img"
       width={500}
       height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: "cover", width: "100%" }}
     />
     <h4 className="project__title">Contest solutions</h4>
     <h5 className="project__description">
-      My solutions to various tasks collected from all over the Internet. <br />{' '}
+      My solutions to various tasks collected from all over the Internet. <br />{" "}
       Here you can find solutions to both Olympiad problems <br /> and test
       tasks from interviews and various courses taken.
     </h5>
     <a
       href="https://github.com/dorley174/"
       className="button"
-      style={{ '--clr': '#ffd600' } as React.CSSProperties}
+      style={{ "--clr": "#ffd600" } as React.CSSProperties}
     >
       <span>See my GitHub</span>
       <i></i>
@@ -215,7 +215,7 @@ const projects = [
       className="project__img"
       width={500}
       height={500}
-      style={{ objectFit: 'cover', width: '100%' }}
+      style={{ objectFit: "cover", width: "100%" }}
     />
     <h4 className="project__title">MeeTime</h4>
     <h5 className="project__description">
@@ -225,11 +225,11 @@ const projects = [
     <a
       onClick={() =>
         alert(
-          'По требованию заказчика, этот проект сейчас закрыт для публичного доступа. \n\nAt the request of the customer, it is currently closed to public access.'
+          "По требованию заказчика, этот проект сейчас закрыт для публичного доступа. \n\nAt the request of the customer, it is currently closed to public access.",
         )
       }
       className="button"
-      style={{ '--clr': '#ff0000' } as React.CSSProperties}
+      style={{ "--clr": "#ff0000" } as React.CSSProperties}
     >
       <span>private access</span>
       <i></i>

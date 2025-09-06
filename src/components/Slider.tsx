@@ -1,8 +1,8 @@
-import React from 'react';
-import Flickity from 'react-flickity-component';
-import 'flickity/css/flickity.css'; // Import Flickity styles
-import Image from 'next/image'; // Assuming you're using Next.js for images
-import '../css/flickity.css'; // Your custom styles
+import React from "react";
+import Flickity from "react-flickity-component";
+import "flickity/css/flickity.css"; // Import Flickity styles
+import Image from "next/image"; // Assuming you're using Next.js for images
+import "../css/flickity.css"; // Your custom styles
 
 interface SliderProps {
   projects: React.ReactNode[]; // Array of React elements
@@ -21,8 +21,8 @@ const Slider: React.FC<SliderProps> = ({ projects }) => {
     <div id="slider" className="slider">
       <h1 className="title">Projects </h1>
       <Flickity
-        className={'carousel'} // Default class for Flickity
-        elementType={'div'} // Default container element
+        className={"carousel"} // Default class for Flickity
+        elementType={"div"} // Default container element
         options={flickityOptions} // Flickity options
         disableImagesLoaded={false} // Default false
         reloadOnUpdate // Reload Flickity on component update

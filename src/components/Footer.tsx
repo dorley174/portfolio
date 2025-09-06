@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const iconStyle = {
-  width: '40px',
-  height: '40px',
-  fill: 'white',
-  transition: 'fill 0.2s ease',
+  width: "40px",
+  height: "40px",
+  fill: "white",
+  transition: "fill 0.2s ease",
 };
 
 const Footer: React.FC = () => {
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="social-icons">
-          <div style={{ display: 'flex', gap: '16px' }}>
+          <div style={{ display: "flex", gap: "16px" }}>
             {/* GitHub */}
             <a
               href="https://github.com/dorley174"
