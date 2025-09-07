@@ -24,7 +24,7 @@ const projects = [
     <a
       href="https://innohassle.ru"
       className="button"
-      style={{ "--clr": "#9fee00" } as React.CSSProperties}
+      style={{ "--clr": "#9d00ff" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -50,9 +50,9 @@ const projects = [
       evil in his world by his power - magical runes.
     </h5>
     <a
-      href="https://github.com/IU-Capstone-Project-2025/SignGame/tree/main"
+      href="https://dorley174.itch.io/sign-game"
       className="button"
-      style={{ "--clr": "#9fee00" } as React.CSSProperties}
+      style={{ "--clr": "#3e3e3eff" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -75,7 +75,7 @@ const projects = [
     <a
       href="https://github.com/dorley174/MoodleCluster"
       className="button"
-      style={{ "--clr": "#9fee00" } as React.CSSProperties}
+      style={{ "--clr": "#ffaa00ff" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -108,7 +108,7 @@ const projects = [
   <li key="dnp" className="project">
     <Image
       alt=""
-      src="/assets/Dnp.png"
+      src="/assets/DNP.png"
       className="project__img"
       width={400}
       height={400}
@@ -123,7 +123,7 @@ const projects = [
     <a
       href="https://github.com/oELYAo/DNP_project"
       className="button"
-      style={{ "--clr": "#9fee00" } as React.CSSProperties}
+      style={{ "--clr": "#006c04ff" } as React.CSSProperties}
     >
       <span>Available now</span>
       <i></i>
@@ -148,9 +148,9 @@ const projects = [
     <a
       href="https://github.com/dorley174/ai_chatbot"
       className="button"
-      style={{ "--clr": "#7e07a9" } as React.CSSProperties}
+      style={{ "--clr": "#cf0927ff" } as React.CSSProperties}
     >
-      <span>on beta testing</span>
+      <span>available now</span>
       <i></i>
     </a>
   </li>,
