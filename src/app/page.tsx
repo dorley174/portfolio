@@ -10,17 +10,15 @@ const projects = [
   <li key="innohassle" className="project">
     <Image
       alt=""
-      src="/assets/innohassle.png"
+      src="/assets/ih.png"
       className="project__img"
       width={400}
       height={400}
-      
     />
     <h4 className="project__title">InnoHassle</h4>
     <h5 className="project__description">
       An ecosystem of Innopolis University students. A huge number of
       integrations with student options - schedules of classes and sports
-      
       sections, calendars, timers and much more.
     </h5>
     <a
@@ -34,18 +32,22 @@ const projects = [
   </li>,
 
   <li key="signgame" className="project">
-    <img
+    <Image
       alt=""
       src="/assets/MainMenu.gif"
       className="project__img"
       width={400}
       height={400}
-      
     />
-    <h4 className="project__title">Sign Game <span className="project__badge">NEW</span></h4>
+    <h4 className="project__title">
+      Sign Game{" "}
+      <span className="project__badge" style={{ backgroundColor: "green" }}>
+        NEW
+      </span>
+    </h4>
     <h5 className="project__description">
-      A 2D Unity platformer about a mysterious wizard, seeking to defeat{" "} all evil in his world by his power - magical runes. 
-      
+      A 2D Unity platformer about a mysterious wizard, seeking to defeat all
+      evil in his world by his power - magical runes.
     </h5>
     <a
       href="https://github.com/IU-Capstone-Project-2025/SignGame/tree/main"
@@ -60,18 +62,15 @@ const projects = [
   <li key="cluster" className="project">
     <Image
       alt=""
-      src="/assets/MoodleCluster.jpg"
+      src="/assets/MoodleCluster.png"
       className="project__img"
       width={400}
       height={400}
-      
     />
     <h4 className="project__title">Moodle Cluster</h4>
     <h5 className="project__description">
-      Linux-based analyzing system of the most popular stydying 
-      website - Moodle - which collects statistics of any site load.
-      
-      
+      Linux-based analyzing system of the most popular stydying website - Moodle
+      - which collects statistics of any site load.
     </h5>
     <a
       href="https://github.com/dorley174/MoodleCluster"
@@ -86,16 +85,14 @@ const projects = [
   <li key="electgen" className="project">
     <Image
       alt=""
-      src="/assets/electgen.jpg"
+      src="/assets/ElectiveGenerator.png"
       className="project__img"
       width={400}
       height={400}
-      
     />
     <h4 className="project__title">Elective Generator</h4>
     <h5 className="project__description">
       Automatic placement of students from different courses into their chosen{" "}
-      
       summer electives based on their GPA and personal priorities
     </h5>
     <a
@@ -111,19 +108,17 @@ const projects = [
   <li key="dnp" className="project">
     <Image
       alt=""
-      src="/assets/Dnp.jpg"
+      src="/assets/Dnp.png"
       className="project__img"
       width={400}
       height={400}
-      
     />
     <h4 className="project__title">
-      Distributed Text Mining & 
-      Sentiment Analysis
+      Distributed Text Mining & Sentiment Analysis
     </h4>
     <h5 className="project__description">
-      An utility which implements a distributed system for 
-      processing and analyzing texts with a focus on tonality analysis.
+      An utility which implements a distributed system for processing and
+      analyzing texts with a focus on tonality analysis.
     </h5>
     <a
       href="https://github.com/oELYAo/DNP_project"
@@ -134,19 +129,21 @@ const projects = [
       <i></i>
     </a>
   </li>,
+
   <li key="psychoai" className="project">
     <Image
       alt=""
-      src="/assets/ai.jpg"
+      src="/assets/ai.png"
       className="project__img"
       width={400}
       height={400}
-      
     />
-    <h4 className="project__title">PsychoAI Chatbot</h4>
+    <h4 className="project__title">
+      PsychoAI Chatbot <span className="project__badge">BETA</span>
+    </h4>
     <h5 className="project__description">
-      An AI assistent that can help you with any problem you say.  Uses
-      YandexGPT and combines with special prompt-building system.
+      An AI assistent that can help you with any problem you say. Uses YandexGPT
+      and combines with special prompt-building system.
     </h5>
     <a
       href="https://github.com/dorley174/ai_chatbot"
@@ -157,19 +154,19 @@ const projects = [
       <i></i>
     </a>
   </li>,
-  <li key="chessmaster" className="project">
+
+  /*<li key="chessmaster" className="project">
     <Image
       alt=""
       src="/assets/CM.png"
       className="project__img"
       width={400}
       height={400}
-      
     />
     <h4 className="project__title">Chess Master</h4>
     <h5 className="project__description">
-      A simple Discord bot that allows you to simulate a chess session. {" "}
-      Based on Stockfish - the Free Chess Engine with UCI support.
+      A simple Discord bot that allows you to simulate a chess session. Based on
+      Stockfish - the Free Chess Engine with UCI support.
     </h5>
     <a
       href="https://github.com/dorley174/Chess-Master"
@@ -188,14 +185,11 @@ const projects = [
       className="project__img"
       width={400}
       height={400}
-      
     />
     <h4 className="project__title">Game of Life</h4>
     <h5 className="project__description">
-      A cellular machine that implements the same name
-       about the life of the created colonies for the implementation
-      
-      of the Turing machine. 
+      A cellular machine that implements the same name about the life of the
+      created colonies for the implementation of the Turing machine.
     </h5>
     <a
       href="https://github.com/dorley174/Game-of-life"
@@ -207,20 +201,19 @@ const projects = [
     </a>
   </li>,
 
-  <li key="solutions" className="project">
+   <li key="solutions" className="project">
     <Image
       alt=""
       src="/assets/contests.png"
       className="project__img"
       width={400}
       height={400}
-      
     />
     <h4 className="project__title">Contest solutions</h4>
     <h5 className="project__description">
-      My solutions to various tasks collected from all over the Internet. {" "}
-      Here you can find solutions to both Olympiad problems  and test
-      tasks from interviews and various courses taken.
+      My solutions to various tasks collected from all over the Internet. Here
+      you can find solutions to both Olympiad problems and test tasks from
+      interviews and various courses taken.
     </h5>
     <a
       href="https://github.com/dorley174/"
@@ -231,6 +224,7 @@ const projects = [
       <i></i>
     </a>
   </li>,
+
   <li key="meetime" className="project">
     <Image
       alt=""
@@ -238,7 +232,6 @@ const projects = [
       className="project__img"
       width={400}
       height={400}
-      
     />
     <h4 className="project__title">MeeTime</h4>
     <h5 className="project__description">
@@ -257,7 +250,7 @@ const projects = [
       <span>private access</span>
       <i></i>
     </a>
-  </li>,
+  </li>, */
 ];
 
 const App: React.FC = () => {
