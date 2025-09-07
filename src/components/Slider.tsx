@@ -11,8 +11,9 @@ interface SliderProps {
 const Slider: React.FC<SliderProps> = ({ projects }) => {
   const flickityOptions = {
     initialIndex: 0,
+    cellAlign: "center",
     wrapAround: true,
-    autoPlay: 3000, // Auto-play every 3 seconds
+    autoPlay: 5000, // Auto-play every 3 seconds
     pageDots: true, // Show dots for navigation
     prevNextButtons: true, // Show previous/next buttons
   };

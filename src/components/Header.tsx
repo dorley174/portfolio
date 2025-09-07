@@ -87,8 +87,7 @@ const Header: React.FC = () => {
             </a>{" "}
             <br /> <br />
             <p>
-              An Entrepreneur who works in Software, FronEnd Development and
-              Content Creation.
+              An Entrepreneur who works in DevOps engineering, Software and FronEnd Development.
             </p>
           </div>
 
@@ -116,7 +115,7 @@ const Header: React.FC = () => {
         <div className="bio-photo">
           <Image
             alt="my photo"
-            src="/images/headerphoto.jpg"
+            src="/assets/headerphoto.jpg"
             className=""
             width={200}
             height={200}

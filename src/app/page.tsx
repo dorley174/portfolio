@@ -10,17 +10,17 @@ const projects = [
   <li key="innohassle" className="project">
     <Image
       alt=""
-      src="/images/innohassle.png"
+      src="/assets/innohassle.png"
       className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: "cover", width: "100%" }}
+      width={400}
+      height={400}
+      
     />
     <h4 className="project__title">InnoHassle</h4>
     <h5 className="project__description">
-      An ecosystem of Innopolis University students. A huge number <br /> of
+      An ecosystem of Innopolis University students. A huge number of
       integrations with student options - schedules of classes and sports
-      <br />
+      
       sections, calendars, timers and much more.
     </h5>
     <a
@@ -32,23 +32,46 @@ const projects = [
       <i></i>
     </a>
   </li>,
+
+  <li key="signgame" className="project">
+    <img
+      alt=""
+      src="/assets/MainMenu.gif"
+      className="project__img"
+      width={400}
+      height={400}
+      
+    />
+    <h4 className="project__title">Sign Game <span className="project__badge">NEW</span></h4>
+    <h5 className="project__description">
+      A 2D Unity platformer about a mysterious wizard, seeking to defeat{" "} all evil in his world by his power - magical runes. 
+      
+    </h5>
+    <a
+      href="https://github.com/IU-Capstone-Project-2025/SignGame/tree/main"
+      className="button"
+      style={{ "--clr": "#9fee00" } as React.CSSProperties}
+    >
+      <span>Available now</span>
+      <i></i>
+    </a>
+  </li>,
+
   <li key="cluster" className="project">
     <Image
       alt=""
-      src="/images/MoodleCluster.jpg"
+      src="/assets/MoodleCluster.jpg"
       className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: "cover", width: "100%" }}
+      width={400}
+      height={400}
+      
     />
     <h4 className="project__title">Moodle Cluster</h4>
     <h5 className="project__description">
-      Linux-based analyzing system of the most popular stydying <br />
+      Linux-based analyzing system of the most popular stydying 
       website - Moodle - which collects statistics of any site load.
-      <br />
-      It is based on the interaction between the collection
-      <br /> of information using Node Exporter and Prometheus, <br />
-      as well as their visualization using Grafana.
+      
+      
     </h5>
     <a
       href="https://github.com/dorley174/MoodleCluster"
@@ -59,19 +82,20 @@ const projects = [
       <i></i>
     </a>
   </li>,
+
   <li key="electgen" className="project">
     <Image
       alt=""
-      src="/images/electgen.jpg"
+      src="/assets/electgen.jpg"
       className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: "cover", width: "100%" }}
+      width={400}
+      height={400}
+      
     />
     <h4 className="project__title">Elective Generator</h4>
     <h5 className="project__description">
       Automatic placement of students from different courses into their chosen{" "}
-      <br />
+      
       summer electives based on their GPA and personal priorities
     </h5>
     <a
@@ -87,18 +111,18 @@ const projects = [
   <li key="dnp" className="project">
     <Image
       alt=""
-      src="/images/Dnp.jpg"
+      src="/assets/Dnp.jpg"
       className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: "cover", width: "100%" }}
+      width={400}
+      height={400}
+      
     />
     <h4 className="project__title">
-      Distributed Text Mining & <br />
+      Distributed Text Mining & 
       Sentiment Analysis
     </h4>
     <h5 className="project__description">
-      The command project, which implements a distributed system for <br />
+      An utility which implements a distributed system for 
       processing and analyzing texts with a focus on tonality analysis.
     </h5>
     <a
@@ -113,15 +137,15 @@ const projects = [
   <li key="psychoai" className="project">
     <Image
       alt=""
-      src="/images/ai.jpg"
+      src="/assets/ai.jpg"
       className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: "cover", width: "100%" }}
+      width={400}
+      height={400}
+      
     />
     <h4 className="project__title">PsychoAI Chatbot</h4>
     <h5 className="project__description">
-      An AI assistent that can help you with any problem you say. <br /> Uses
+      An AI assistent that can help you with any problem you say.  Uses
       YandexGPT and combines with special prompt-building system.
     </h5>
     <a
@@ -136,15 +160,15 @@ const projects = [
   <li key="chessmaster" className="project">
     <Image
       alt=""
-      src="/images/CM.png"
+      src="/assets/CM.png"
       className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: "cover", width: "100%" }}
+      width={400}
+      height={400}
+      
     />
     <h4 className="project__title">Chess Master</h4>
     <h5 className="project__description">
-      A simple Discord bot that allows you to simulate a chess session. <br />{" "}
+      A simple Discord bot that allows you to simulate a chess session. {" "}
       Based on Stockfish - the Free Chess Engine with UCI support.
     </h5>
     <a
@@ -160,19 +184,18 @@ const projects = [
   <li key="GameOfLife" className="project">
     <Image
       alt=""
-      src="/images/gol.gif"
+      src="/assets/gol.gif"
       className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: "cover", width: "100%" }}
+      width={400}
+      height={400}
+      
     />
     <h4 className="project__title">Game of Life</h4>
     <h5 className="project__description">
       A cellular machine that implements the same name
-      <br /> about the life of the created colonies for the implementation
-      <br />
-      of the Turing machine. The game works in window mode <br /> and is written
-      on C ++ using the SDL library.
+       about the life of the created colonies for the implementation
+      
+      of the Turing machine. 
     </h5>
     <a
       href="https://github.com/dorley174/Game-of-life"
@@ -187,16 +210,16 @@ const projects = [
   <li key="solutions" className="project">
     <Image
       alt=""
-      src="/images/contests.png"
+      src="/assets/contests.png"
       className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: "cover", width: "100%" }}
+      width={400}
+      height={400}
+      
     />
     <h4 className="project__title">Contest solutions</h4>
     <h5 className="project__description">
-      My solutions to various tasks collected from all over the Internet. <br />{" "}
-      Here you can find solutions to both Olympiad problems <br /> and test
+      My solutions to various tasks collected from all over the Internet. {" "}
+      Here you can find solutions to both Olympiad problems  and test
       tasks from interviews and various courses taken.
     </h5>
     <a
@@ -211,11 +234,11 @@ const projects = [
   <li key="meetime" className="project">
     <Image
       alt=""
-      src="/images/MT.jpg"
+      src="/assets/MT.jpg"
       className="project__img"
-      width={500}
-      height={500}
-      style={{ objectFit: "cover", width: "100%" }}
+      width={400}
+      height={400}
+      
     />
     <h4 className="project__title">MeeTime</h4>
     <h5 className="project__description">

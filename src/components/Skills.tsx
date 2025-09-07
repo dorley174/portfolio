@@ -5,7 +5,7 @@ const TechStack: React.FC = () => {
   const techStack = [
     {
       name: "FrontEnd",
-      technology: "HTML | CSS | JS | React | TypeScript | Node.JS ",
+      technology: "HTML | CSS | JS | React | TypeScript | Next.JS ",
       icon: "web_asset",
       color: "#FF0000",
     },
