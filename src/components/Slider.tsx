@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css"; // Import Flickity styles
 import Image from "next/image"; // Assuming you're using Next.js for images
@@ -9,6 +9,7 @@ interface SliderProps {
 }
 
 const Slider: React.FC<SliderProps> = ({ projects }) => {
+  const flickityRef = useRef<Flickity | null>(null);
   const flickityOptions = {
     initialIndex: 0,
     cellAlign: "center",
@@ -16,7 +17,17 @@ const Slider: React.FC<SliderProps> = ({ projects }) => {
     autoPlay: 5000, // Auto-play every 3 seconds
     pageDots: true, // Show dots for navigation
     prevNextButtons: true, // Show previous/next buttons
+    imagesLoaded: true,
   };
+
+  useEffect(() => {
+    // после монтирования подождём чуть-чуть и вызовем resize
+    const timer = setTimeout(() => {
+      flickityRef.current?.resize();
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div id="slider" className="slider">
